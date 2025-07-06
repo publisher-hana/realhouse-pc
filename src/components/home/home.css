@@ -1,0 +1,148 @@
+.home section{
+  margin-bottom: 40px;
+}
+.visual-section {
+  position: relative;
+  overflow-x: hidden;
+  margin-bottom:60px;
+}
+.visual-section .visual-img{
+  height:460px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.visual-section .visual-img img{
+  object-fit: cover;
+}
+
+.visual-content{
+  position: absolute;
+  color: white;
+  top:0;
+  left: 0;
+  width:100%;
+  height:460px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index:105;
+}
+
+.visual-text h1 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.visual-text .highlight {
+  color: #ffd166;
+}
+
+/* 검색창 박스 */
+.search-box {
+  display: flex;
+  justify-content: center;
+  width: 600px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 50px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* 검색창 input */
+.search-box input {
+  flex: 1;
+  border: none;
+  padding: 16px 20px;
+  font-size: 16px;
+  outline: none;
+  border-radius: 50px 0 0 50px;
+}
+
+/* 검색 버튼 */
+.search-box button {
+  background-color: #ff6b6b;
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 0 30px;
+  cursor: pointer;
+  transition: background 0.3s;
+  border-radius: 0 50px 50px 0;
+}
+
+.search-box button:hover {
+  background-color: #e64949;
+}
+
+.listings-slider {
+  display: flex;
+  padding:6px;
+  box-sizing:border-box;  
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.listing-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  min-width: 260px;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+}
+
+.listing-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.info {
+  padding: 16px;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111;
+}
+
+.details {
+  font-size: 14px;
+  color: #666;
+  margin: 8px 0;
+}
+
+.tags {
+  margin: 8px 0;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  margin-right: 6px;
+}
+
+.tag.orange {
+  background-color: #ffe8cc;
+  color: #d17a00;
+}
+
+.tag.gray {
+  background-color: #f1f1f1;
+  color: #555;
+}
+
+.address {
+  font-size: 13px;
+  color: #999;
+}

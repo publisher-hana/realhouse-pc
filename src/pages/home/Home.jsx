@@ -1,6 +1,15 @@
+import Visual from "../../components/home/Visual"
+import { Listing } from "../../components/home/Listing"
 const Home = () => {
   return (
-    <div>Home</div>
+    <>
+      <Visual />
+      <div className="container">
+        <section className="section">
+          <Listing />
+        </section>
+      </div>
+    </>
   )
 }
 
