@@ -1,0 +1,141 @@
+.my-trade-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  
+  &.buy .title {
+    color: var(--red-color); 
+  }
+
+  &.sell .title {
+    color: var(--c-blue); 
+  }
+}
+
+.text-box {
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      font-size: 16px;
+      color: #666;
+    }
+  }
+
+  .btn-green {
+    padding: 14px 28px;
+    background-color: var(--c-blue);
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+
+    &:hover {
+      background-color: var(--c-blue-hover);
+    }
+  }
+
+  
+.tab-area {
+  display: flex;
+}
+
+.tab {
+  padding: 12px 24px;
+  font-weight: 600;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+}
+
+.tab.active {
+  border-color: #ff3b3b;
+  color: #ff3b3b;
+}
+
+.filter-select-area {
+  display: flex;
+  gap: 12px;
+}
+
+.filter-select-area select {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  appearance: none;
+  background-color: #fff;
+  font-size: 14px;
+}
+
+.inquiry-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.inquiry-card {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  margin: 20px 0;;
+  padding: 20px;
+  margin-bottom: 16px;
+  transition: box-shadow 0.2s;
+  background: #fff;
+}
+
+.inquiry-card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+
+
+.inquiry-card .title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.inquiry-card .title strong {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.inquiry-card .badge {
+  margin-left: 8px;
+  background-color: #ff5b5b;
+  color: #fff;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 12px;
+}
+.inquiry-card .badge.bg-green{
+  background-color: var(--c-grass);
+}
+
+.inquiry-card .info {
+  color: #666;
+  font-size: 14px;
+  padding: 0;
+  margin-bottom: 8px;
+}
+
+.inquiry-card .stats {
+  font-size: 14px;
+}
+
+.inquiry-card .stats em {
+  font-style: normal;
+  font-weight: 600;
+  margin: 0 4px;
+}
+
+.inquiry-card .stats em.red {
+  color: #ff3b30;
+}

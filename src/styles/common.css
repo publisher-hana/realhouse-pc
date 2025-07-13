@@ -89,3 +89,14 @@
 .no-scroll{
   overflow-y: hidden;
 }
+
+.scroll-container{
+    position: fixed;
+    top: var(--header-h);
+    left: 0;
+    bottom: 0;
+    width: 72.4%;
+    padding-bottom: 80px;
+    overflow-y: scroll;
+    box-sizing: border-box;
+}

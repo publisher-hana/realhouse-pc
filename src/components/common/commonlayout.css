@@ -38,6 +38,9 @@
   background-color: #f7f7f7;
   color: var(--c-bold-gray);
 }
+.footer.hidden{
+  display: none;
+}
 .footer-content{
   width: var(--cont-width);
   margin: 0 auto;

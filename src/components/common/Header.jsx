@@ -10,8 +10,8 @@ const Header = () => {
             <li><Link to="/mypage" className={`link ${location.pathname.startsWith("/mypage") ? "on" : ""}`}>마이홈</Link></li>
             <li><Link to="/itemSch" className={`link ${location.pathname.startsWith("/itemSch") ? "on" : ""}`}>매물검색</Link></li>
             <li><Link to="/visitReq" className={`link ${location.pathname.startsWith("/visitReq") ? "on" : ""}`}>방문요청</Link></li>
-            <li><Link to="">나의매수</Link></li>
-            <li><Link to="">나의매도</Link></li>
+            <li><Link to="/myBuy" className={`link ${location.pathname.startsWith("/myBuy") ? "on" : ""}`}>나의매수</Link></li>
+            <li><Link to="/mySell" className={`link ${location.pathname.startsWith("/mySell") ? "on" : ""}`}>나의매도</Link></li>
           </ul>
         </nav>
         <Link to="" className='member'>로그인</Link>

@@ -52,7 +52,7 @@ const ReqAside = () => {
   );
 };
   return (
-    <aside className="property-list-wrapper req-type">
+    <aside className="aside-scroll-wrapper nav-h req-type">
         <div className="list-header">
           <div className="row-top">
             <div className="button-area">

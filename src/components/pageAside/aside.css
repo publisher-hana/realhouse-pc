@@ -2,15 +2,10 @@
 
 /*aside*/
 :root {
-  --main-color: #00a8ff;
-  --gray: #888;
-  --light-gray: #f6f6f6;
-  --border-color: #e0e0e0;
   --tag-orange: #f7941d;
   --tag-gray: #999;
 }
-
-.property-list-wrapper {
+.aside-scroll-wrapper{
   position: fixed;
   right: 0;
   top: calc(var(--header-h) + 60px); /* 헤더 아래에 위치 */
@@ -43,7 +38,7 @@
 .total-count {
   font-weight: 600;
   font-size: 16px;
-  color: var(--main-color);
+  color: var(--c-blue);
 }
 
 .property-list {
@@ -140,7 +135,7 @@
   color: var(--red-color);
 }
 
-.property-list-wrapper.req-type{
+.aside-scroll-wrapper.nav-h{
    top: calc(var(--header-h)); 
 }
 
@@ -168,6 +163,9 @@
     color: #fff;
     font-size: 13px;
     background-color: var(--c-blue);
+    &:hover {
+      background-color: var(--c-blue-hover);
+    }
 }
 .req-type .button-area p{
   margin-top: 10px;
@@ -182,14 +180,37 @@
  font-size: 13px;
  vertical-align: middle;
 }
-.req-type .card-inner{
+.card-inner{
   display: flex;
   align-items: center;
+  padding: 0 12px;
 }
-.req-type .visit-checkbox{
+.visit-checkbox{
   border-top: 1px solid var(--border-color);
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px;
+}
+.agent-closer-info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  color: var(--c-bold-gray);
+}
+
+.agent-closer-info .profile{
+  .name{
+    font-size: 18px;
+    color: var(--c-b-base);
+  }
+}
+.agent-closer-info .term{
+  em{
+    color: var(--c-blue);
+    &.red{
+      color: var(--red-color);
+    }
+  }
 }

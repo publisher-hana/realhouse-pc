@@ -9,18 +9,30 @@ import Footer from './components/common/Footer';
 import MyPage from './pages/home/MyPage';
 import ItemSearch from './pages/offer/ItemSearch';
 import { VisitRequest } from './pages/offer/VisitRequest';
+import MySell from './pages/myTrades/MySell';
+import Mybuy from './pages/myTrades/Mybuy';
+import NewBuy1 from './pages/myTrades/NewBuy1';
+import NewBuy2 from './pages/myTrades/NewBuy2';
+import NewBuy3 from './pages/myTrades/NewBuy3';
 function App() {
   return (
     <>
       <Router>
-        <Header />
-        <Routes>  
-          <Route path='/' element={<Home />} />
-          <Route path='/mypage' element={<MyPage />} />
-          <Route path='/itemSch' element={<ItemSearch />} />
-          <Route path='/visitReq' element={<VisitRequest />} />
-        </Routes>
-        <Footer />
+        <div className='wrapper'>
+          <Header />
+          <Routes>  
+            <Route path='/' element={<Home />} />
+            <Route path='/mypage' element={<MyPage />} />
+            <Route path='/itemSch' element={<ItemSearch />} />
+            <Route path='/visitReq' element={<VisitRequest />} />
+            <Route path='/myBuy' element={<Mybuy />} />
+            <Route path='/mySell' element={<MySell />} />
+            <Route path='/myBuy/newBuy1' element={<NewBuy1 />} />
+            <Route path='/myBuy/newBuy2' element={<NewBuy2 />} />
+            <Route path='/myBuy/newBuy3' element={<NewBuy3 />} />
+          </Routes>
+          <Footer />
+        </div>
       </Router>
     </>
   )

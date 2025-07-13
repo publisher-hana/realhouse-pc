@@ -1,7 +1,9 @@
 import { useEffect } from "react";
+import './mytrades.css'
+import { Link } from "react-router-dom";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import ReqAside from "../../components/pageAside/ReqAside";
-
-export const VisitRequest = () => {
+const NeweBuy2 = () => {
   useEffect(() => {
     // 클래스 추가
     document.body.classList.add("no-scroll");
@@ -16,8 +18,16 @@ export const VisitRequest = () => {
   return (
     <>
       <div className='container-wrap'>
-        <div className="scroll-container">
-          <div className="listing-detail">
+        <div className="left-area scroll-container inquiry-step">
+          <div className="left-layout">
+            <div className="step-title-wrap">
+              <h2 className="step-title">매수/임차 중개의뢰</h2>
+              <div className="step-indicator">
+                <span className="step-number">1</span>
+                <span className="step-number active">2</span>
+                <span className="step-label">방문요청 매물 선택</span>
+              </div>
+            </div>
             <section className="section">
               <div className="image-gallery">
                 <img src="/realhouse-pc/images/thumnail-room.jpg" alt="대표 이미지" className="main-image" />
@@ -106,6 +116,10 @@ export const VisitRequest = () => {
                 <div className="navi">30m</div>
               </div>
             </section>
+             <div className='btn-area'>
+              <Link to="/myBuy/newBuy1" className="btn btn-prev"><IoIosArrowBack size={16}/>이전</Link>
+              <Link to="/myBuy/newBuy3" className="btn btn-next">다음 <IoIosArrowForward size={16}/></Link>
+            </div>
           </div>
         </div>
         <ReqAside />
@@ -113,3 +127,4 @@ export const VisitRequest = () => {
     </>
   )
 }
+export default NeweBuy2

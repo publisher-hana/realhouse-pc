@@ -47,7 +47,7 @@ const mockListings = [
   },
 ];
 
-const Aside = () => {
+const OfferAside = () => {
    const [favorites, setFavorites] = useState([]);
 
   const toggleFavorite = (id) => {
@@ -56,7 +56,7 @@ const Aside = () => {
     );
   };
   return (
-    <aside className="property-list-wrapper">
+    <aside className="aside-scroll-wrapper">
         <div className="list-header">
           <strong className="total-count">전체매물 · 21</strong>
         </div>
@@ -98,4 +98,4 @@ const Aside = () => {
   )
 }
 
-export default Aside
+export default OfferAside

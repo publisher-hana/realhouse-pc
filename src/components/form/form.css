@@ -96,3 +96,14 @@
   margin-top: 20px;
   font-size: 0.875rem;
 }
+
+.stars{
+  margin-top: 2px;
+  span{
+    color: var(--c-light-gray);
+    &.on{
+      color: var(--red-light-color);
+    }
+  }
+
+}
