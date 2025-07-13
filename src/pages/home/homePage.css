@@ -1,0 +1,84 @@
+.mypage-profile {
+  font-family: 'Pretendard', sans-serif;
+}
+
+.user-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.user-info .text h2 {
+  font-size: 24px;
+  margin: 0 0 8px 0;
+}
+
+.user-info .text p {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+.setting-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: 110px;
+  border: 1px solid #ccc;
+  background: transparent;
+  color: #333;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.setting-btn:hover {
+  background: #f7f7f7;
+}
+
+.card-container {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.info-card {
+  flex: 1;
+  min-width: 280px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: var(--box-shadow);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.info-card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.info-card .badge {
+  background: #ff4d4f;
+  color: white;
+  border-radius: 999px;
+  padding: 2px 8px;
+  font-size: 12px;
+  margin-left: 6px;
+}
+
+.info-card p {
+  color: #777;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.info-card a:hover {
+  text-decoration: underline;
+}

@@ -79,7 +79,15 @@
 .search-box button:hover {
   background-color: #e64949;
 }
-
+/*매물 슬라이더*/
+.listing{
+  position: relative;
+}
+.listing .link{
+  display: flex;  
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
 .listings-slider {
   display: flex;
   padding:6px;
@@ -91,7 +99,7 @@
 .listing-card {
   background: #fff;
   border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   min-width: 260px;
   flex-shrink: 0;
@@ -145,4 +153,210 @@
 .address {
   font-size: 13px;
   color: #999;
+}
+/*공지사항*/
+.notice-news-section {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.card {
+  flex: 1;
+  min-width: 300px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow:var(--box-shadow);
+  padding: 20px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.card-header h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.card-header .more {
+  font-size: 14px;
+  color: #888;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.card-header .more:hover {
+  color: #000;
+}
+
+.item-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-top: 1px solid #eee;
+  font-size: 14px;
+}
+.item-list li:first-child {
+  border-top: none;
+}
+
+.notice-news-section .link {
+  display: flex;
+  align-items: center;
+}
+.notice-news-section .link:hover{
+  color: var(--c-blue);
+
+}
+.notice-news-section .link .text{
+  display: inline-block;
+  max-width: 400px;;
+   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-right: 4px;
+}
+
+.badge.new {
+  display: inline-block;
+  line-height: 18px;
+  background-color: #ff6b6b;
+  color: white;
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  margin-right: 8px;
+}
+
+.date {
+  color: #999;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+/*app link*/
+.app-download {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  padding: 32px;
+  flex-wrap: wrap;
+}
+.app-download_wrap{
+  padding-top: 95px;
+  background: url('/realhouse-pc/images/app_down_bg.png') no-repeat;
+  background-position:calc(100% - 30px) top;
+}
+
+.app-download .left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.app-download .left .icon {
+  width: 48px;
+  height: 48px;
+}
+
+.app-download .right {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.app-download input {
+  padding: 12px 16px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  min-width: 200px;
+  transition: border-color 0.3s;
+}
+.app-download input:focus {
+  border-color: #26a69a;
+  outline: none;
+}
+
+.app-download button {
+  background: #7ac943;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.app-download button:hover {
+  background: #68b132;
+}
+
+/*point*/
+.point-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 32px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: var(--box-shadow);
+  gap: 16px;
+  flex-wrap: wrap;
+  font-family: 'Pretendard', sans-serif;
+}
+
+.point-box .label {
+  color: #ff4d4f;
+  font-weight: 700;
+  font-size: 16px;
+  min-width: 80px;
+}
+.point-box .point-amount{
+  display: flex;
+  align-items: center;
+  gap:20px;
+}
+.point-box .amount {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+.point-box .amount span {
+  color: #1e90ff;
+  font-weight: 700;
+  font-size: 20px;
+  margin-right: 4px;
+}
+
+.point-btn {
+  padding: 10px 20px;
+  background: #1e90ff;
+  color: #fff;
+  font-size: 14px;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.point-btn:hover {
+  background: #187bcd;
 }

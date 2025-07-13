@@ -33,3 +33,66 @@
 .slick-prev::before, .slick-next:before{
   display: none;
 }
+
+/*slider*/
+.slider-wrap {
+  position: relative;
+  padding: 1rem;
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 8px;
+  margin-bottom: 10px;
+}
+
+.slider-track {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 3px;
+  z-index: -1;
+}
+
+.slider {
+  -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 8px;
+    background: transparent;
+    position: absolute;
+    pointer-events: none;
+    top: -2px
+}
+
+.slider::-webkit-slider-thumb {
+  pointer-events: all;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #378cff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  z-index: 3
+}
+
+.labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  color: #666;
+  margin-bottom: 6px;
+}
+
+.slider-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  font-size: 0.875rem;
+}

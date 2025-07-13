@@ -9,6 +9,7 @@ const Visual = () => {
     slidesToScroll: 1,
     autoplay: true, 
     autoplaySpeed: 2000,
+     arrows: false 
   };
   return (
       <section className="visual-section">

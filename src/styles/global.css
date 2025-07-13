@@ -61,19 +61,22 @@ i,em{font-style: normal;}
 :root{
   --cont-width:1200px;
   --header-h:70px;
-  --input-h:40px;
+  --form-h:40px;
   --primary-color:#378cff;
   --c-blue:#2281FF;
   --c-blue-strong:#0057FF;
   --c-b-base:#1F1F1F;
-  --c-gray:#666;
-  --c-light-gray:#B4B4B5;
+  --c-bold-gray:#666;
+  --c-light-gray:#9c9c9c;
   --c-gradient: linear-gradient(85.66deg, #01affe 33.71%, #4bde97 75.67%);
   --c-orange:#fc7900;
-  --red-color:#ff0303;
+  --red-color:#ff5050;
+  --red-light-color:#ff6161;
   --border-gray:#ccc;
   --txt-lh:1.4;
   --base-gap:40px;
   --bd-radius:30px;
   --trans-3s:all ease 0.3s;
+  --hover-color: #e9ecef;
+  --box-shadow :0 6px 20px rgba(0, 0, 0, 0.1);
 }
