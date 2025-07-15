@@ -2,6 +2,7 @@ import Slider from "react-slick";
 import './home.css'
 import { PrevArrow, NextArrow } from '../form/CustomArrows'; 
 import { IoIosArrowForward } from "react-icons/io";
+import { Link } from 'react-router-dom';
 
 export const Listing = () => {
    const settings = {
@@ -22,7 +23,7 @@ export const Listing = () => {
         <Slider {...settings}>
             <div className="listings-slider">
               <div className="listing-card">
-                <a href="#">
+                <Link to="/visitReq">
                   <figure><img src="/realhouse-pc/images/thumnail-room.jpg" alt="매물" /></figure>
                   <div className="info">
                     <strong className="price">매매 3억 5000</strong>
@@ -33,12 +34,12 @@ export const Listing = () => {
                     </div>
                     <p className="address">잠실주공1단지 104동잠실</p>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="listings-slider">
               <div className="listing-card">
-                <a href="#">
+                <Link to="/visitReq">
                   <figure><img src="/realhouse-pc/images/thumnail-room.jpg" alt="매물" /></figure>
                   <div className="info">
                     <strong className="price">매매 3억 5000</strong>
@@ -49,12 +50,12 @@ export const Listing = () => {
                     </div>
                     <p className="address">잠실주공1단지 104동잠실</p>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="listings-slider">
               <div className="listing-card">
-                <a href="#">
+                <Link to="/visitReq">
                   <figure><img src="/realhouse-pc/images/thumnail-room.jpg" alt="매물" /></figure>
                   <div className="info">
                     <strong className="price">매매 3억 5000</strong>
@@ -65,12 +66,12 @@ export const Listing = () => {
                     </div>
                     <p className="address">잠실주공1단지 104동잠실</p>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="listings-slider">
               <div className="listing-card">
-                <a href="#">
+                <Link to="/visitReq">
                   <figure><img src="/realhouse-pc/images/thumnail-room.jpg" alt="매물" /></figure>
                   <div className="info">
                     <strong className="price">매매 3억 5000</strong>
@@ -81,12 +82,12 @@ export const Listing = () => {
                     </div>
                     <p className="address">잠실주공1단지 104동잠실</p>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="listings-slider">
               <div className="listing-card">
-                <a href="#">
+                <Link to="/visitReq">
                   <figure><img src="/realhouse-pc/images/thumnail-room.jpg" alt="매물" /></figure>
                   <div className="info">
                     <strong className="price">매매 3억 5000</strong>
@@ -97,7 +98,7 @@ export const Listing = () => {
                     </div>
                     <p className="address">잠실주공1단지 104동잠실</p>
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
             
