@@ -100,3 +100,11 @@
     overflow-y: scroll;
     box-sizing: border-box;
 }
+
+.select{
+  height: var( --form-h);
+  padding: 5px 16px;
+  border: 1px solid var(--border-color);
+  box-sizing: border-box;
+  font-size: 14px;
+}

@@ -14,6 +14,7 @@ import Mybuy from './pages/myTrades/Mybuy';
 import NewBuy1 from './pages/myTrades/NewBuy1';
 import NewBuy2 from './pages/myTrades/NewBuy2';
 import NewBuy3 from './pages/myTrades/NewBuy3';
+import NewBuy4 from './pages/myTrades/NewBuy4';
 function App() {
   return (
     <>
@@ -30,6 +31,7 @@ function App() {
             <Route path='/myBuy/newBuy1' element={<NewBuy1 />} />
             <Route path='/myBuy/newBuy2' element={<NewBuy2 />} />
             <Route path='/myBuy/newBuy3' element={<NewBuy3 />} />
+            <Route path='/myBuy/newBuy4' element={<NewBuy4 />} />
           </Routes>
           <Footer />
         </div>
