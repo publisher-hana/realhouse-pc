@@ -27,6 +27,8 @@ const MySell = () => {
               title="나의매도"
               subtitle="매물을 중개의뢰하시면 보다 빠르게 계약하실 수 있습니다."
               buttonText="신규 중개의뢰"
+              linkUrl="/mySell/newSell1"
+              btnClass="btn-blue"
           />
          <section className="inquiry-status">
             <div className='inquiry-status-header'>

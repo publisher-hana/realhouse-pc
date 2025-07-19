@@ -14,8 +14,8 @@ const Header = () => {
             <li><Link to="/mySell" className={`link ${location.pathname.startsWith("/mySell") ? "on" : ""}`}>나의매도</Link></li>
           </ul>
         </nav>
-        <Link to="" className='member'>로그인</Link>
-        <Link to="" className='member'>관리자</Link>
+        {/* <Link to="" className='member'>로그인</Link> */}
+        <Link to="" className='member'>중개사 관리자</Link>
       </div>
     </header>
   )

@@ -64,7 +64,7 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  flex-wrap: wrap; /* 반응형 대응 */
+  flex-wrap: wrap;
   margin-bottom: 20px;
 }
 
@@ -148,17 +148,24 @@
     border: 1px solid #ffa6a6;
     padding: 20px;
     border-radius: 8px;
-    font-size: 14px;
-    color: #333;
+    font-size: 16px;
+    color: var(--c-gray);
     display: flex;
     align-items: center;
     gap:40px;
+    font-weight: 400;
     .ico {
       display: inline-block;
       width:50px;
       height: 45px;
       margin-right: 6px;
       background: url("/realhouse-pc/images/icon/ico-notice.png");
+    }
+    li{
+      margin-bottom: 10px;
+    }
+    .point{
+      color: var(--red-color);
     }
   }
 .btn-area{
@@ -169,9 +176,10 @@
     display: flex;
     align-items: center;
     gap:10px;
-    padding: 12px 24px;
-    font-size: 16px;
-    background: #00c2a5;
+    padding: 0px 20px;
+    height: var(--form-h);
+    font-size: 14px;
+    background: var(--c-emerald);
     color: #fff;
     border: none;
     border-radius: 8px;
@@ -184,4 +192,226 @@
       margin-right: 10px;
     }
   }
+}
+.desc{
+  margin-top: 10px;
+  font-size: 13px;
+  color: #999;
+  span{
+    color: var(--red-color);
+  }
+}
+.title-label{
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.address-search-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.address-input {
+  width: 400px;
+  padding: 0 12px;
+  height: var(--form-h);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+.property-history .section-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.property-history .count {
+  color: #e53935; /* 빨간색 포인트 */
+  font-weight: 600;
+}
+
+.property-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.property-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+  transition: box-shadow 0.2s ease;
+}
+
+.property-item:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.property-type {
+  font-weight: 600;
+  color: #0077ff;
+  margin-right: 16px;
+  min-width: 80px;
+}
+
+.property-address {
+  flex: 1;
+  font-size: 15px;
+  color: #444;
+  margin-right: 16px;
+}
+
+.select-button {
+  background-color: var(--c-emerald);
+  color: #fff;
+  border: none;
+  padding: 8px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: background 0.2s ease-in-out;
+}
+
+.select-button:hover {
+  background-color: #00b194;
+}
+.form-card {
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 24px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 16px;
+  gap: 12px;
+}
+
+.form-label {
+  min-width: 100px;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-label.required::before {
+  content: '*';
+  color: #e53935;
+  margin-right: 4px;
+}
+
+.form-value {
+  font-size: 16px;
+  color: #444;
+}
+
+.form-input,
+.form-select {
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.form-input.short {
+  width: 80px;
+}
+
+.form-inline {
+  display: flex;
+  gap: 8px;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.btn {
+  padding: 8px 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn.active {
+  background: #00c9a7;
+  color: #fff;
+  border-color: #00c9a7;
+}
+
+.form-hint {
+  font-size: 13px;
+  color: #999;
+  margin-top: 8px;
+}
+
+.unit {
+  margin-left: 4px;
+  color: #666;
+}
+.info-box {
+  border: 1px solid #e0e0e0;
+  background-color: #f9fafa;
+  border-radius: 12px;
+  padding: 24px;
+  max-width: 960px;
+  margin-top: 32px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+}
+
+.info-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.info-icon {
+  font-size: 20px;
+  margin-right: 8px;
+}
+
+.info-title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.info-body {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--c-gray);
+}
+
+.info-list {
+  margin-bottom: 16px;
+  padding-left: 20px;
+}
+
+.info-list li {
+  margin-bottom: 8px;
+}
+
+.info-paragraph {
+  margin-bottom: 16px;
+}
+
+.info-divider {
+  border: none;
+  border-top: 1px dashed #ccc;
+  margin: 24px 0;
+}
+
+.info-paragraph.emphasis {
+  color: var(--red-color);
+  font-weight: 500;
 }

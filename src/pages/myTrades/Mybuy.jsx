@@ -31,6 +31,7 @@ const Mybuy = () => {
               subtitle="매수/임차 중개의뢰를 통해 보다 좋은 매물을 빠르게 계약하실 수 있습니다."
               buttonText="신규 중개의뢰"
               linkUrl="/myBuy/newBuy1"
+              btnClass="btn-emerald"
           />
           <section className="inquiry-status">
             <div className='inquiry-status-header'>

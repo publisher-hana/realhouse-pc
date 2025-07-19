@@ -43,9 +43,9 @@ const NewBuy1 = () => {
               </div>
             </div>
 
-            <p className="notice-msg">
+            <div className="notice-msg">
               <i className="ico"></i> 중개 의뢰할 거래구분과 매물유형을 선택하신 후 [다음]을 클릭하십시오.
-            </p>
+            </div>
             <div className='btn-area'>
               <Link to="/myBuy/newBuy2" className="btn">다음 <IoIosArrowForward size={16}/></Link>
             </div>
