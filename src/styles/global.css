@@ -1,8 +1,11 @@
   html,body, #root{
     font-family: 'Pretendard', sans-serif;
     line-height: 1.5;
-    color:#1F1F1F;
+    color:#5f5f5f;
     height: 100%;
+  }
+   h2,h3,strong{
+    color: var(--c-black);
   }
   .wrapper{
     min-height: 100%;

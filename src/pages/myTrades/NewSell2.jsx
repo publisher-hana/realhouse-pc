@@ -34,10 +34,11 @@ const NewSell2 = () => {
               </div>
               <div className="form-row">
                 <label className="form-label required">거래구분</label>
-                <div className="form-buttons">
-                  <button className="btn active">임대</button>
-                  <button className="btn">매매</button>
+                <div className="button-group">
+                  <button className="option-btn active">임대</button>
+                  <button className="option-btn">매매</button>
                 </div>
+
               </div>
             </div>
           </section>

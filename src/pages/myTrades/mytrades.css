@@ -355,7 +355,16 @@
   color: #999;
   margin-top: 8px;
 }
-
+.form-row .button-group{
+  display: flex;
+  gap: 8px;
+  .option-btn{
+    border-radius: 8px;
+    &.active{
+      background-color: var(--c-emerald);
+    }
+  }
+}
 .unit {
   margin-left: 4px;
   color: #666;
