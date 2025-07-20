@@ -26,6 +26,9 @@
   display: flex;
   align-items: center;
   gap: 40px;
+  .external-link{
+    color: var(--c-blue);
+  }
 }
 .menu-list .link.on{
    color: var(--c-blue);

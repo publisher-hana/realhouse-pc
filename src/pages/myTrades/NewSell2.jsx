@@ -38,7 +38,6 @@ const NewSell2 = () => {
                   <button className="option-btn active">임대</button>
                   <button className="option-btn">매매</button>
                 </div>
-
               </div>
             </div>
           </section>

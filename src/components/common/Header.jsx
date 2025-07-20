@@ -12,10 +12,10 @@ const Header = () => {
             <li><Link to="/visitReq" className={`link ${location.pathname.startsWith("/visitReq") ? "on" : ""}`}>방문요청</Link></li>
             <li><Link to="/myBuy" className={`link ${location.pathname.startsWith("/myBuy") ? "on" : ""}`}>나의매수</Link></li>
             <li><Link to="/mySell" className={`link ${location.pathname.startsWith("/mySell") ? "on" : ""}`}>나의매도</Link></li>
+            <li><a href="https://publisher-hana.github.io/realhouse-pc-agent/" className='external-link' target='_blank'>중개사 관리자</a></li>
           </ul>
         </nav>
         {/* <Link to="" className='member'>로그인</Link> */}
-        <Link to="" className='member'>중개사 관리자</Link>
       </div>
     </header>
   )

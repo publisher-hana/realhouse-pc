@@ -302,12 +302,6 @@
   color: #333;
 }
 
-.form-label.required::before {
-  content: '*';
-  color: #e53935;
-  margin-right: 4px;
-}
-
 .form-value {
   font-size: 16px;
   color: #444;
