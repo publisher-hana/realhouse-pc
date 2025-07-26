@@ -30,6 +30,9 @@
     color: var(--c-blue);
   }
 }
+.header .menu-list li a{
+  color: var(--c-black);
+}
 .menu-list .link.on{
    color: var(--c-blue);
 }
