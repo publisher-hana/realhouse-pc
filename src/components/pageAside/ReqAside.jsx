@@ -1,51 +1,8 @@
 import { useState } from "react";
 import './aside.css'
 
-const mockListings = [
-  {
-    id: 1,
-    title: "매매 7억 5000",
-    summary: "3룸 | 3층 | 82㎡(25)/100㎡(33)",
-    address: "잠실주공1단지 104동잠실",
-    tags: ["아파트", "욕실수리", "도배"],
-    image: "/realhouse-pc/images/offering_img1.jpg",
-  },
-  {
-    id: 2,
-    title: "매매 6억 5000",
-    summary: "3룸 | 3층 | 82㎡(25)/100㎡(33)",
-    address: "잠실주공1단지 104동잠실",
-    tags: ["아파트", "욕실수리", "도배"],
-    image: "/realhouse-pc/images/offering_img2.jpg",
-  },
-  {
-    id: 3,
-    title: "매매 4억",
-    summary: "2룸 | 1층 | 82㎡(25)/100㎡(33)",
-    address: "잠실주공1단지 104동잠실",
-    tags: ["빌라", "욕실수리", "도배"],
-    image: "/realhouse-pc/images/offering_img3.jpg",
-  },
-  {
-    id: 4,
-    title: "매매 4억",
-    summary: "2룸 | 1층 | 82㎡(25)/100㎡(33)",
-    address: "잠실주공1단지 104동잠실",
-    tags: ["빌라", "욕실수리", "도배"],
-    image: "/realhouse-pc/images/offering_img3.jpg",
-  },
-  {
-    id: 5,
-    title: "매매 4억",
-    summary: "2룸 | 1층 | 82㎡(25)/100㎡(33)",
-    address: "잠실주공1단지 104동잠실",
-    tags: ["빌라", "욕실수리", "도배"],
-    image: "/realhouse-pc/images/offering_img3.jpg",
-  },
-];
-
-const ReqAside = () => {
-   const [visited, setVisited] = useState([]);
+const ReqAside = ({ mockListings, selectedId, setSelectedId }) => {
+  const [visited, setVisited] = useState([]);
   const toggleVisit = (id) => {
     setVisited((prev) =>
     prev.includes(id) ? prev.filter((v) => v !== id) : [...prev, id]
@@ -71,7 +28,12 @@ const ReqAside = () => {
             const inputId = `visit-${item.id}`; // ✅ 고유 ID 지정
             return (
               <li key={item.id} className="property-card">
-                <div className="card-inner">
+                <a href="#" className={`card-inner${selectedId === item.id ? " active" : ""}`}
+                  onClick={e => {
+                    e.preventDefault();
+                    setSelectedId(item.id);
+                  }}
+                >
                   <img src={item.image} alt="매물 이미지" className="thumb" />
                   <div className="info">
                     <strong className="price">{item.title}</strong>
@@ -88,7 +50,7 @@ const ReqAside = () => {
                     </div>
                     <p className="address">{item.address}</p>
                   </div>
-                </div>
+                </a>
 
                 <div className="visit-checkbox">
                   <div className="checkbox-item">

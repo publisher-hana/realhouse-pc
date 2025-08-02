@@ -185,6 +185,9 @@
   display: flex;
   align-items: center;
   padding: 0 12px;
+  &.active,&:hover{
+    background-color: #e8f4ff;
+  }
 }
 .visit-checkbox{
   border-top: 1px solid var(--border-color);

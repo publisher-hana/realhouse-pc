@@ -1,7 +1,52 @@
 import { useEffect } from "react";
 import ReqAside from "../../components/pageAside/ReqAside";
+import { useState } from "react";
 
-export const VisitRequest = () => {
+const mockListings = [
+  {
+    id: 1,
+    title: "매매 7억 5000",
+    summary: "3룸 | 3층 | 82㎡(25)/100㎡(33)",
+    address: "잠실주공1단지 104동 잠실",
+    tags: ["아파트", "욕실수리", "도배"],
+    image: "/realhouse-pc/images/offering_img1.jpg",
+  },
+  {
+    id: 2,
+    title: "매매 6억 5000",
+    summary: "3룸 | 3층 | 82㎡(25)/100㎡(33)",
+    address: "잠실주공1단지 202동 잠실",
+    tags: ["아파트", "욕실수리", "도배"],
+    image: "/realhouse-pc/images/offering_img2.jpg",
+  },
+  {
+    id: 3,
+    title: "매매 4억",
+    summary: "2룸 | 1층 | 82㎡(25)/100㎡(33)",
+    address: "노원 주공1단지 104동 노원구",
+    tags: ["빌라", "욕실수리", "도배"],
+    image: "/realhouse-pc/images/offering_img3.jpg",
+  },
+  {
+    id: 4,
+    title: "매매 4억",
+    summary: "2룸 | 1층 | 82㎡(25)/100㎡(33)",
+    address: "잠실주공1단지 104동잠실",
+    tags: ["빌라", "욕실수리", "도배"],
+    image: "/realhouse-pc/images/offering_img3.jpg",
+  },
+  {
+    id: 5,
+    title: "매매 4억",
+    summary: "2룸 | 1층 | 82㎡(25)/100㎡(33)",
+    address: "잠실주공4단지 204동 잠실",
+    tags: ["빌라", "욕실수리", "도배"],
+    image: "/realhouse-pc/images/offering_img3.jpg",
+  },
+];
+
+export const VisitRequest = ()  => {
+   const [selectedId, setSelectedId] = useState(mockListings[0]?.id);
   useEffect(() => {
     // 클래스 추가
     document.body.classList.add("no-scroll");
@@ -13,6 +58,7 @@ export const VisitRequest = () => {
       document.querySelector('.footer').classList.remove("hidden");
     };
   }, []);
+  const selectedItem = mockListings.find(item => item.id === selectedId);
   return (
     <>
       <div className='container-wrap'>
@@ -38,7 +84,7 @@ export const VisitRequest = () => {
               <div className="summary-info">
                 <div className="info-box">
                   <label>월세보증금/월세</label>
-                  <strong>1억1000/50만원</strong>
+                  <strong>{selectedItem?.title}</strong>
                 </div>
                 <div className="info-box">
                   <label>전용면적</label>
@@ -52,7 +98,7 @@ export const VisitRequest = () => {
 
               <div className="address-row">
                 <span className="type">아파트</span>
-                <strong className="address">잠실주공1단지 102동</strong>
+                <strong className="address">{selectedItem?.address}</strong>
                 <span className="status red">급매</span>
               </div>
               <table className="detail-table">
@@ -108,7 +154,11 @@ export const VisitRequest = () => {
             </section>
           </div>
         </div>
-        <ReqAside />
+        <ReqAside 
+           mockListings={mockListings}
+          selectedId={selectedId}
+          setSelectedId={setSelectedId}
+        />
       </div>
     </>
   )

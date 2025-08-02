@@ -1,7 +1,21 @@
 import { IoIosArrowForward } from 'react-icons/io'
 import './mytrades.css'
 import { Link } from 'react-router-dom'
-const NewBuy1 = () => {
+import { useState } from 'react';
+const NewBuy1 = () => { 
+  const [selectedProperty, setSelectedProperty] = useState('아파트');
+  const transactionTypes = [
+    { value: 'jeonse', label: '전세' },
+    { value: 'monthlyRent', label: '월세' },
+    { value: 'sale', label: '매매' },
+    { value: 'shortTermRent', label: '단기임대' },
+  ];
+  const [selectedTransaction, setSelectedTransaction] = useState(transactionTypes[0].value);
+  const propertyTypes = [
+    '아파트', '주상복합', '연립/빌라', '오피스텔', '도시형',
+    '다가구주택', '상가주택', '원룸주택', '단독/전원', '한옥주택', '타운하우스'
+  ];
+
   return (
     <>
     <div className='container-wrap'>
@@ -18,27 +32,27 @@ const NewBuy1 = () => {
               <div className="option-group">
                 <label>거래구분</label>
                 <div className="button-group">
-                  <button className="option-btn active">전세</button>
-                  <button className="option-btn">월세</button>
-                  <button className="option-btn">매매</button>
-                  <button className="option-btn">단기임대</button>
+                  {transactionTypes.map(({ value, label }) => (
+                    <button
+                      key={value}
+                      className={`option-btn ${selectedTransaction === value ? 'active' : ''}`}
+                      onClick={() => setSelectedTransaction(value)}
+                    >
+                      {label}
+                    </button>
+                  ))}
                 </div>
               </div>
 
               <div className="option-group">
                 <label>매물유형</label>
                 <div className="button-group">
-                  <button className="option-btn active">아파트</button>
-                  <button className="option-btn">주상복합</button>
-                  <button className="option-btn">연립/빌라</button>
-                  <button className="option-btn">오피스텔</button>
-                  <button className="option-btn">도시형</button>
-                  <button className="option-btn">다가구주택</button>
-                  <button className="option-btn">상가주택</button>
-                  <button className="option-btn">원룸주택</button>
-                  <button className="option-btn">단독/전원</button>
-                  <button className="option-btn">한옥주택</button>
-                  <button className="option-btn">타운하우스</button>
+                  {propertyTypes.map((type) => (
+                    <button 
+                      key={type}
+                      className={`option-btn ${selectedProperty === type ? 'active' : ''}`}
+                      onClick={() => setSelectedProperty(type)}>{type}</button>
+                   ))}
                 </div>
               </div>
             </div>
